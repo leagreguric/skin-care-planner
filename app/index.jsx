@@ -9,7 +9,7 @@ import Colors from '../utils/Colors';
 import { supabase } from '../utils/SupabaseConfig';
 import services from '../utils/services';
 
-// Set notification handler
+
 Notifications.setNotificationHandler({
     handleNotification: async () => ({
         shouldShowAlert: true,
@@ -28,7 +28,7 @@ export default function Home() {
         checkUserAuth();
         getUserDetails(); 
         fetchUVIndex(); 
-        scheduleSPFReminder(); // Schedule SPF reminder
+        scheduleSPFReminder(); 
     }, []);
 
     const checkUserAuth = async () => {

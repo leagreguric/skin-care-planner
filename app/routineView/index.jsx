@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useFocusEffect } from '@react-navigation/native';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity, Alert, ImageBackground } from 'react-native';
-import { supabase } from '../../utils/SupabaseConfig'; // Adjust path
-import { client } from '../../utils/KindeConfig'; // Adjust path
-import { useRouter } from 'expo-router';
+import { supabase } from '../../utils/SupabaseConfig'; 
+import { client } from '../../utils/KindeConfig'; 
 import Colors from '../../utils/Colors';
 import bgImage from '../../assets/images/bcg.jpg';
 
@@ -26,7 +25,7 @@ export default function RoutineView() {
         }, [userId])
     );
 
-    // Get today's day of the week (e.g., 'Monday')
+
     const getToday = () => {
         const daysOfWeek = ['Ponedjeljak', 'Utorak', 'Srijeda', 'Četvrtak', 'Petak', 'Subota', 'Nedjelja'];
         const today = new Date().getDay();

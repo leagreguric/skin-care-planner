@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ImageBackground, Alert } from 'react-native';
-import { supabase } from '../../utils/SupabaseConfig'; // Adjust path
-import { client } from '../../utils/KindeConfig'; // Adjust path
-import { useRouter, Stack } from 'expo-router'; // Import Stack
-import bgImage from '../../assets/images/bcg.jpg'; // Path to your background image
+import { supabase } from '../../utils/SupabaseConfig'; 
+import { client } from '../../utils/KindeConfig'; 
+import { useRouter, Stack } from 'expo-router'; 
+import bgImage from '../../assets/images/bcg.jpg'; 
 import Colors from '../../utils/Colors';
 
 export default function SkinTypeSurvey() {

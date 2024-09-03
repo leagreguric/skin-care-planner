@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, TextInput, FlatList, Alert, ImageBackground } from 'react-native';
-import { supabase } from '../../utils/SupabaseConfig'; // Adjust path
-import { client } from '../../utils/KindeConfig'; // Adjust path
+import { supabase } from '../../utils/SupabaseConfig'; 
+import { client } from '../../utils/KindeConfig'; 
 import { useRouter } from 'expo-router';
 import Colors from '../../utils/Colors';
 import bgImage from '../../assets/images/bcg.jpg';
+
 
 export default function RoutineTracking() {
     const router = useRouter();
@@ -75,6 +76,7 @@ export default function RoutineTracking() {
             }
 
             Alert.alert('Success', 'Routine saved successfully!');
+            router.replace('/routineView');
         } catch (error) {
             console.error('Error saving routine:', error);
             Alert.alert('Error', 'An error occurred while saving routine');

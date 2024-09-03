@@ -120,7 +120,7 @@ export default function ProgressDiaryScreen() {
                 fetchAllEntries();
                 setEntry('');
                 setExistingEntryId(null);
-                setImageUri(null); // Clear the image after saving
+                setImageUri(null); 
             }
         } catch (error) {
             console.error('Error saving entry:', error);
